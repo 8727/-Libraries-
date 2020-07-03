@@ -1,15 +1,7 @@
-/*
- * wiegand.h
- *
- *  Created on: 18 февр. 2020 г.
- *      Author: dima
- */
-
 #ifndef WIEGAND_H_
 #define WIEGAND_H_
 
 #include "main.h"
-
 
 void ReadD0(); // interrupt
 void ReadD1(); // interrupt
