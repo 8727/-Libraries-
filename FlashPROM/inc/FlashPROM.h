@@ -1,10 +1,3 @@
-/*
- * FlashPROM.h
- *
- *  Created on: 30 дек. 2019 г.
- *      Author: dima
- */
-
 #ifndef FLASHPROM_H_
 #define FLASHPROM_H_
 
@@ -21,7 +14,6 @@
 #define DEBUG 1
 
 typedef uint16_t myBuf_t;                        // либо uint32_t
-
 
 void erase_flash(void);
 uint32_t flash_search_adress(uint32_t address, uint16_t cnt);
