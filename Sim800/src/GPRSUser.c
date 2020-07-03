@@ -1,14 +1,8 @@
 #include "Sim80x.h"
-#if (_SIM80X_USE_GPRS==1)
 
+#if (SIM80X_USE_GPRS)
 
-//#########################################################################################################
-void     GPRS_UserHttpGetAnswer(char *data,uint32_t StartAddress,uint16_t dataLen)
-{
+  void GPRS_UserHttpGetAnswer(char *data,uint32_t StartAddress,uint16_t dataLen){
   
-  
-}
-//#########################################################################################################
-
-
+  }
 #endif
