@@ -7,8 +7,8 @@
 
 /* Define --------------------------------------------------------------------*/
 #define W25QXX_SPI                SPI1
-#define W25Qxx_CS_LOW             GPIOA->BSRR = GPIO_BSRR_BR4
-#define W25Qxx_CS_HIGHT           GPIOA->BSRR = GPIO_BSRR_BS4
+#define W25Qxx_CS_LOW             *((uint32_t *)(PERIPH_BB_BASE+32*(GPIOA_BASE-PERIPH_BASE+0xC) + 4*4)) = 0 //GPIOA->BSRR = GPIO_BSRR_BR4
+#define W25Qxx_CS_HIGHT           *((uint32_t *)(PERIPH_BB_BASE+32*(GPIOA_BASE-PERIPH_BASE+0xC) + 4*4)) = 1 //GPIOA->BSRR = GPIO_BSRR_BS4
 
 #define W25QXX_DUMMY_BYTE         0xA5
 
